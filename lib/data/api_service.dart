@@ -4,8 +4,8 @@ import '../models/country_dto.dart';
 import '../service_key.dart';
 
 class CountryApiService {
-  final String _apiUrl = service_key;
-  final String _accessToken = '5ecf6d1c5ecf6d1c5ecf6d1c355dea80dc55ecf5ecf6d1c399c1aead5bb6eb3a836584b';
+  final String _apiUrl = 'https://api.vk.com/method/database.getCountriesById';
+  final String _accessToken = service_key;
   final String _v = '5.199';
 
   Future<List<CountryDto>> getCountriesById(List<int> countryIds) async {
